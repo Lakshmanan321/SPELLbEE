@@ -139,6 +139,175 @@ export default function App() {
     scrollToComponent(section10FormRef);
   };
 
+  const handleDownloadBrochure = () => {
+    // Generate and download a beautifully formatted high-fidelity SpellBee International Syllabus PDF brochure
+    const pdfContent = `%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 10 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1200 >>
+stream
+q
+1 0 0 1 0 0 cm
+0 0 0 rg
+0.08 0.1 0.3 RG
+10 10 L 585 10 L 585 832 L 10 832 L Z S
+% Header Accent Bar
+25.13 44.31 92.16 rg
+10 810 575 22 re f
+1 1 1 rg
+/F1 18 Tf
+40 820 Td
+(SPELLBEE INTERNATIONAL) Tj
+0 -50 Td
+/F1 24 Tf
+0 0 0 rg
+(ACADEMIC SYLLABUS & COLLABORATION PROSPECTUS) Tj
+0 -30 Td
+/F2 13 Tf
+0.1 0.1 0.1 rg
+(Direct Support / Enquiry: +91 63801 18835) Tj
+0 -40 Td
+/F1 16 Tf
+0.72 0.22 0.05 rg
+(AN ENLIGHTENING ENGLISH DEVELOPMENT JOURNEY) Tj
+0 -25 Td
+0.15 0.15 0.15 rg
+/F2 11 Tf
+(Our program enhances 4 core faculties of the English Language:) Tj
+0 -20 Td
+(  1. PHONETICS & PRONUNCIATION - Mastery of phonemes and standard dictation.) Tj
+0 -15 Td
+(  2. WORD ANALYSIS - Roots, prefixes, suffixes, etymology, and dynamic vocabulary.) Tj
+0 -15 Td
+(  3. SENTENCE STRUCTURE - Syntax clarity, contextual usage, and robust grammar.) Tj
+0 -15 Td
+(  4. LANGUAGE ETIQUETTE - High-fidelity phrasing, international idioms, & idioms.) Tj
+0 -40 Td
+/F1 14 Tf
+0.36 0.13 0.71 rg
+(COLLABORATION TIER & SCHOOL BENEFITS) Tj
+0 -25 Td
+0.2 0.2 0.2 rg
+/F2 10 Tf
+(- Zero upfront capital required from partner institutions) Tj
+0 -15 Td
+(- Custom high-fidelity interactive physical textbooks delivered) Tj
+0 -15 Td
+(- Staged competitive tests evaluated under TCS iON examination rules) Tj
+0 -15 Td
+(- National trophies, merit certificates, and world ranking recognition) Tj
+0 -40 Td
+/F1 14 Tf
+0.08 0.55 0.38 rg
+(HOW TO INITIATE THE PROGRAM) Tj
+0 -25 Td
+0.2 0.2 0.2 rg
+/F2 11 Tf
+(1. Fill out the School Enquiry Panel on our platform or contact Support directly.) Tj
+0 -15 Td
+(2. Receive physical sample books and interactive syllabus materials for review.) Tj
+0 -15 Td
+(3. Coordinator onboarding session organized to guide parent announcement drives.) Tj
+0 -40 Td
+/F1 12 Tf
+0.47 0.44 0.42 rg
+(SpellBee International - Language for Life . All Rights Reserved 2026-2027) Tj
+Q
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 7 0 R /Resources << /Font << /F1 5 0 R /F2 10 0 R >> >> >>
+endobj
+7 0 obj
+<< /Length 1200 >>
+stream
+q
+0.08 0.1 0.3 RG
+10 10 L 585 10 L 585 832 L 10 832 L Z S
+0 0 0 rg
+/F1 18 Tf
+40 780 Td
+(SPELLBEE INTERNATIONAL) Tj
+/F2 12 Tf
+0 -30 Td
+(Syllabus Breakdown - K-12 Developmental Standard) Tj
+0 -40 Td
+/F1 14 Tf
+(L1 to L2: Primary Explorers) Tj
+0 -20 Td
+/F2 11 Tf
+(Focus: Letter connections, basic phonetic cues, visual naming, sight vocabulary.) Tj
+0 -35 Td
+/F1 14 Tf
+(L3 to L5: Intermediate Linguists) Tj
+0 -20 Td
+/F2 11 Tf
+(Focus: Prefixes, Root exploration, silent letters, sentence structuring drills.) Tj
+0 -35 Td
+/F1 14 Tf
+(L6 to L8: Advanced Syntacticians) Tj
+0 -20 Td
+/F2 11 Tf
+(Focus: Etymological roots, spelling rules variations, advanced idioms.) Tj
+0 -35 Td
+/F1 14 Tf
+(L9 to L12: Professional Orators) Tj
+0 -20 Td
+/F2 11 Tf
+(Focus: International eloquence, global speech etiquette, absolute spelling mastery.) Tj
+0 -50 Td
+/F1 13 Tf
+(Contact Support Desk Today to dispatch physical samples details) Tj
+0 -20 Td
+(WhatsApp Support Hotline: +91 63801 18835) Tj
+0 -15 Td
+(Email Desk: support@spellbeeinternational.com) Tj
+Q
+endstream
+endobj
+10 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000015 00000 n 
+0000000070 00000 n 
+0000000135 00000 n 
+0000000268 00000 n 
+0000001518 00000 n 
+0000001597 00000 n 
+0000001730 00000 n 
+0000002980 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+3050
+%%EOF`;
+
+    const blob = new Blob([pdfContent], { type: 'application/pdf' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'SpellBee_International_Syllabus_Brochure.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
   const handleFormInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormState(prev => ({
@@ -257,7 +426,7 @@ export default function App() {
       <div className="bg-navy-900 text-white py-2 px-4 text-xs font-mono font-medium tracking-wide border-b border-navy-800">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <div className="flex items-center gap-2">
-            <span className="inline-flex h-2 w-2 rounded-full bg-academic-500 animate-pulse"></span>
+            <span className="inline-flex h-2 w-2 rounded-full bg-[#B91C1C] animate-pulse"></span>
             <span className="text-navy-100">AUTHORIZED PRINCIPAL & ACADEMIC DIRECTORS DESK</span>
           </div>
           <div className="flex items-center gap-4 text-xs">
@@ -276,68 +445,21 @@ export default function App() {
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-navy-100 shadow-sm transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
           
-          {/* Logo Brand Area: Beautifully integrated high-fidelity SpellBee International SVG Mascot & corporate typography */}
+          {/* Logo Brand Area: Beautifully integrated high-fidelity SpellBee International logo */}
           <div className="flex items-center gap-3 select-none">
-            {/* Cute bespoke SVG SpellBee Mascot wearing Graduation Cap */}
-            <div className="relative w-12 h-12 flex-shrink-0">
-              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-sm">
-                {/* Antennas */}
-                <path d="M 42 38 Q 38 28 32 30" fill="none" stroke="#EF4444" strokeWidth="2.5" strokeLinecap="round" />
-                <circle cx="32" cy="30" r="3" fill="#B91C1C" />
-                
-                <path d="M 58 38 Q 62 28 68 30" fill="none" stroke="#EF4444" strokeWidth="2.5" strokeLinecap="round" />
-                <circle cx="68" cy="30" r="3" fill="#B91C1C" />
-
-                {/* Wings */}
-                <ellipse cx="28" cy="48" rx="14" ry="10" transform="rotate(-30 28 48)" fill="#F8FAFC" stroke="#94A3B8" strokeWidth="2" />
-                <ellipse cx="30" cy="56" rx="11" ry="8" transform="rotate(-10 30 56)" fill="#F8FAFC" opacity="0.8" stroke="#CBD5E1" strokeWidth="1.5" />
-                <ellipse cx="72" cy="48" rx="14" ry="10" transform="rotate(30 72 48)" fill="#F8FAFC" stroke="#94A3B8" strokeWidth="2" />
-                <ellipse cx="70" cy="56" rx="11" ry="8" transform="rotate(10 70 56)" fill="#F8FAFC" opacity="0.8" stroke="#CBD5E1" strokeWidth="1.5" />
-                
-                {/* Bee Body (Red grad) */}
-                <circle cx="50" cy="62" r="23" fill="#B91C1C" stroke="#7F1D1D" strokeWidth="2" />
-                
-                {/* Cheeks */}
-                <circle cx="38" cy="64" r="3" fill="#FCA5A5" opacity="0.8" />
-                <circle cx="62" cy="64" r="3" fill="#FCA5A5" opacity="0.8" />
-                
-                {/* Eyes */}
-                <circle cx="42" cy="58" r="3" fill="#0F172A" />
-                <circle cx="41.3" cy="57" r="1" fill="#FFFFFF" />
-                <circle cx="58" cy="58" r="3" fill="#0F172A" />
-                <circle cx="57.3" cy="57" r="1" fill="#FFFFFF" />
-                
-                {/* Smile */}
-                <path d="M 46 66 Q 50 70 54 66" fill="none" stroke="#0F172A" strokeWidth="2" strokeLinecap="round" />
-
-                {/* Graduation Cap */}
-                {/* Diamond top */}
-                <polygon points="50,23 74,31 50,39 26,31" fill="#1E293B" stroke="#0F172A" strokeWidth="1.5" />
-                {/* Base cap skull */}
-                <path d="M 37 32.5 L 37 38.5 Q 50 45.5 63 38.5 L 63 32.5 Z" fill="#334155" />
-                {/* Red Tassel */}
-                <path d="M 50,31 Q 66,32 70,39" fill="none" stroke="#EF4444" strokeWidth="1.2" />
-                <polygon points="69,38 72,38 70,44" fill="#B91C1C" />
-              </svg>
-            </div>
-
-            {/* Corporate Typography Brand */}
-            <div className="flex flex-col text-left">
-              <div className="flex items-baseline leading-none">
-                <span className="font-serif font-black text-[#B91C1C] text-[20px] sm:text-[23px] tracking-tight">SpellBee</span>
-                <span className="text-[#B91C1C] text-[10px] font-bold ml-0.5 align-super relative -top-1">®</span>
-              </div>
-              <div className="w-full h-[1px] bg-slate-200 my-0.5"></div>
-              <span className="font-serif font-bold text-slate-850 text-[10px] sm:text-[11px] uppercase tracking-widest leading-none">International</span>
-              <span className="text-[9px] text-emerald-700 font-serif italic font-semibold leading-none mt-1">Language for Life</span>
-            </div>
+            <img 
+              src="/src/assets/images/regenerated_image_1782118489180.png" 
+              alt="SpellBee International Logo" 
+              className="h-10 sm:h-12 w-auto object-contain"
+              referrerPolicy="no-referrer"
+            />
           </div>
 
           {/* Action Area: Beautiful Contact CTA */}
           <div className="flex items-center gap-4">
             <button 
               onClick={() => scrollToComponent(section10FormRef)}
-              className="inline-flex items-center justify-center gap-1.5 bg-[#EA580C] hover:bg-[#D97706] text-white font-bold text-sm py-2.5 px-5 rounded-lg shadow-md transition-all cursor-pointer hover:scale-[1.02]"
+              className="inline-flex items-center justify-center gap-1.5 bg-[#B91C1C] hover:bg-[#991B1B] text-white font-bold text-sm py-2.5 px-5 rounded-lg shadow-md transition-all cursor-pointer hover:scale-[1.02]"
             >
               <span>Contact Us</span>
               <ArrowRight className="h-4 w-4" />
@@ -360,14 +482,14 @@ export default function App() {
             
             {/* Left Column: Bold elegant layout matching "The Future Of Education Is Here" header pattern */}
             <div className="lg:col-span-7 space-y-6 text-left">
-              <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3.5 py-1.5 text-xs text-[#5B21B6] font-mono tracking-wider font-bold shadow-xs">
-                <span className="h-2 w-2 rounded-full bg-[#EA580C] animate-pulse"></span>
+              <div className="inline-flex items-center gap-2 bg-white border border-red-100 rounded-full px-3.5 py-1.5 text-xs text-[#B91C1C] font-mono tracking-wider font-bold shadow-xs">
+                <span className="h-2 w-2 rounded-full bg-[#B91C1C] animate-pulse"></span>
                 <span>SpellBee International Partnership</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#1E1B4B] leading-[1.1]">
                 The Future Of <br className="hidden md:inline" />
-                <span className="text-[#5B21B6]">English Education</span> Is Here!
+                <span className="text-[#B91C1C]">English Education</span> Is Here!
               </h1>
               
               <p className="text-slate-600 text-lg leading-relaxed max-w-2xl font-light">
@@ -385,10 +507,10 @@ export default function App() {
                 </button>
                 
                 <button
-                  onClick={() => scrollToComponent(section5FrameworkRef)}
-                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold px-6 py-3.5 rounded-xl border border-slate-300 shadow-sm transition-colors cursor-pointer text-sm"
+                  onClick={handleDownloadBrochure}
+                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-[#1E1B4B] font-bold px-6 py-3.5 rounded-xl border-2 border-[#5B21B6]/30 shadow-sm hover:shadow transition-all cursor-pointer text-sm animate-pulse"
                 >
-                  <span>View Programme Framework</span>
+                  <span>Download Programme Brochure PDF 📄</span>
                 </button>
               </div>
 
@@ -527,7 +649,7 @@ export default function App() {
 
                 {/* Floating Metric 2 Badge */}
                 <div className="absolute -bottom-6 -right-6 bg-white/95 backdrop-blur-sm shadow-xl p-3.5 rounded-2xl border border-slate-100 z-20 flex items-center gap-3 animate-pulse pointer-events-auto" style={{ animationDuration: '4s' }}>
-                  <div className="p-2.5 bg-amber-100 text-[#EA580C] rounded-xl font-bold">
+                  <div className="p-2.5 bg-rose-100 text-[#B91C1C] rounded-xl font-bold">
                     <Users className="h-5 w-5" />
                   </div>
                   <div>
@@ -557,15 +679,15 @@ export default function App() {
           </p>
           
           {/* horizontal credibility strip styled cleanly as elegant horizontal strip */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 items-center justify-center">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 items-stretch justify-center">
             {credibilityStats.map((stat) => (
               <div 
                 key={stat.id} 
-                className="bg-[#FAF9F6] border border-slate-200/60 p-4 rounded-xl text-center hover:shadow-xs hover:border-[#5B21B6]/35 transition-all group cursor-pointer"
+                className="bg-[#FAF9F6] border border-slate-200/60 p-4 rounded-xl text-center hover:shadow-xs hover:border-[#5B21B6]/35 transition-all group cursor-pointer h-full flex flex-col justify-start"
               >
-                <span className="block text-2xl font-black text-[#5B21B6] group-hover:text-[#EA580C] transition-colors">{stat.value}</span>
-                <span className="block text-xs font-bold text-slate-700 uppercase tracking-tight font-sans mt-1">{stat.label}</span>
-                <p className="text-[10px] text-slate-400 mt-1.5 leading-normal">{stat.subtext}</p>
+                <span className="block text-xl sm:text-2xl font-black text-[#5B21B6] group-hover:text-[#B91C1C] transition-colors leading-tight">{stat.value}</span>
+                <span className="block text-xs font-bold text-slate-700 uppercase tracking-tight font-sans mt-1 leading-snug">{stat.label}</span>
+                <p className="text-[10px] text-slate-400 mt-auto pt-2 leading-normal">{stat.subtext}</p>
               </div>
             ))}
           </div>
@@ -573,7 +695,7 @@ export default function App() {
           <div className="pt-2 flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-xs text-slate-500">
             <span className="flex items-center gap-1"><ShieldCheck className="h-4 w-4 text-[#10B981]" /> 16+ Years of Proven Pedagogy</span>
             <span>•</span>
-            <span className="flex items-center gap-1"><Star className="h-4 w-4 text-[#EA580C] fill-[#EA580C]" /> Verified School-wide Reports provided</span>
+            <span className="flex items-center gap-1"><Star className="h-4 w-4 text-[#FBBF24] fill-[#FBBF24]" /> Verified School-wide Reports provided</span>
             <span>•</span>
             <span className="flex items-center gap-1">📍 Multi-board compatibility: CBSE, ICSE, Matric & State Boards</span>
           </div>
@@ -618,14 +740,14 @@ export default function App() {
                         {card.title}
                       </h4>
                     </div>
-                    <ChevronRight className={`h-4 w-4 shrink-0 transition-transform ${activeNeed === card.id ? 'translate-x-1 text-amber-400' : 'text-slate-400'}`} />
+                    <ChevronRight className={`h-4 w-4 shrink-0 transition-transform ${activeNeed === card.id ? 'translate-x-1 text-[#B91C1C]' : 'text-slate-400'}`} />
                   </button>
                 ))}
               </div>
 
               {/* Trust Card anchor */}
-              <div className="bg-amber-50 border border-amber-200 p-5 rounded-2xl text-left bg-gradient-to-tr from-amber-50 to-orange-50">
-                <span className="text-[10px] text-[#EA580C] font-mono tracking-widest uppercase font-bold block mb-1">Direct Implementation Note</span>
+              <div className="bg-rose-50/50 border border-red-100 p-5 rounded-2xl text-left">
+                <span className="text-[10px] text-[#B91C1C] font-mono tracking-widest uppercase font-bold block mb-1">Direct Implementation Note</span>
                 <p className="text-xs text-slate-700 leading-relaxed font-light">
                   SpellBee International deploys physical syllabus books and orientation toolkits entirely corresponding with high-standard curricula.
                 </p>
@@ -648,10 +770,7 @@ export default function App() {
                   >
                     <div>
                       <div className="flex justify-between items-start mb-4">
-                        <div className={`p-2.5 rounded-xl text-xs font-mono font-bold ${isSelected ? 'bg-violet-100 text-[#5B21B6]' : 'bg-slate-100 text-slate-500'}`}>
-                          {card.id === 'accuracy' ? 'CAP-01' : card.id === 'fluency' ? 'CAP-02' : card.id === 'confidence' ? 'CAP-03' : 'CAP-04'}
-                        </div>
-                        <span className={`text-[10px] font-mono uppercase tracking-widest ${isSelected ? 'text-[#EA580C] font-extrabold' : 'text-slate-400'}`}>
+                        <span className={`text-[10px] font-mono uppercase tracking-widest ${isSelected ? 'text-[#B91C1C] font-extrabold' : 'text-slate-400'}`}>
                           {isSelected ? 'Selected Paradigm' : 'View Core Target'}
                         </span>
                       </div>
@@ -692,17 +811,17 @@ export default function App() {
                 {/* Image matching the lower left layout in the screenshot */}
                 <div className="bg-white rounded-3xl p-5 shadow-2xl relative z-10 border border-slate-100 max-w-sm mx-auto">
                   <img 
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=420&h=460" 
-                    alt="SpellBee National Training Director" 
+                    src="/src/assets/images/regenerated_image_1782110365385.jpg" 
+                    alt="Dr. Devika Senan, Indian School Principal & Academic Advisor" 
                     className="rounded-2xl w-full object-cover aspect-[4/4] filter saturate-100 mb-4"
                     referrerPolicy="no-referrer"
                   />
                   <div className="flex justify-between items-center bg-[#FAF9F6] p-3 rounded-xl border border-slate-100">
                     <div>
-                      <span className="text-[9px] font-mono text-slate-400 block tracking-wider font-extrabold">ACADEMIC EXCELLENCE DIRECT DEPUTY</span>
-                      <span className="text-xs font-black text-slate-900">Expert Coordinators Panel</span>
+                      <span className="text-[9px] font-mono text-slate-400 block tracking-wider font-extrabold text-left">NATIONAL ADVISORY BOARD</span>
+                      <span className="text-xs font-black text-slate-900 block text-left">Dr. Devika Senan, Principal</span>
                     </div>
-                    <span className="text-[10px] bg-[#10B981] text-white px-2 py-0.5 rounded-full font-bold">ACTIVE SUPPORT</span>
+                    <span className="text-[10px] bg-emerald-600 text-white px-2.5 py-0.5 rounded-full font-bold uppercase shrink-0">Expert Advisor</span>
                   </div>
                 </div>
 
@@ -711,10 +830,10 @@ export default function App() {
                   <div className="flex items-center gap-1 text-gold-500 mb-2">
                     {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="h-3.5 w-3.5 fill-[#FBBF24] text-[#FBBF24]" />)}
                   </div>
-                  <p className="text-xs text-slate-600 italic">
-                    "Unparalleled parent engagement. SpellBee has elevated our public credentials intensely!"
+                  <p className="text-xs text-slate-600 italic leading-relaxed">
+                    "Unparalleled parent engagement. SpellBee has elevated our public credentials and English fluency extensively!"
                   </p>
-                  <p className="text-[10px] font-bold text-[#5B21B6] mt-2 font-mono uppercase tracking-widest">— Principal, National Public Group</p>
+                  <p className="text-[10px] font-bold text-[#5B21B6] mt-2 font-mono uppercase tracking-widest leading-none">— Dr. Devika Senan, Principal, National Academy</p>
                 </div>
               </div>
             </div>
@@ -740,7 +859,7 @@ export default function App() {
               {/* Feature check grid */}
               <div className="grid sm:grid-cols-2 gap-4 pt-2">
                 <div className="flex items-start gap-2 text-slate-700">
-                  <Check className="h-5 w-5 text-[#EA580C] mt-0.5" />
+                  <Check className="h-5 w-5 text-[#B91C1C] mt-0.5" />
                   <div className="text-xs sm:text-sm">
                     <span className="font-extrabold block text-[#1E1B4B]">Level-wise Graded Handbooks</span>
                     <span>Delivered directly to schools for all students</span>
@@ -748,7 +867,7 @@ export default function App() {
                 </div>
 
                 <div className="flex items-start gap-2 text-slate-700">
-                  <Check className="h-5 w-5 text-[#EA580C] mt-0.5" />
+                  <Check className="h-5 w-5 text-[#B91C1C] mt-0.5" />
                   <div className="text-xs sm:text-sm">
                     <span className="font-extrabold block text-[#1E1B4B]">Live & Recorded Support</span>
                     <span>No prep workload or presentation pressure on class teachers</span>
@@ -756,7 +875,7 @@ export default function App() {
                 </div>
 
                 <div className="flex items-start gap-2 text-slate-700">
-                  <Check className="h-5 w-5 text-[#EA580C] mt-0.5" />
+                  <Check className="h-5 w-5 text-[#B91C1C] mt-0.5" />
                   <div className="text-xs sm:text-sm">
                     <span className="font-extrabold block text-[#1E1B4B]">National Trophies & Medals</span>
                     <span>Highly inspiring physical recognition systems</span>
@@ -764,7 +883,7 @@ export default function App() {
                 </div>
 
                 <div className="flex items-start gap-2 text-slate-700">
-                  <Check className="h-5 w-5 text-[#EA580C] mt-0.5" />
+                  <Check className="h-5 w-5 text-[#B91C1C] mt-0.5" />
                   <div className="text-xs sm:text-sm">
                     <span className="font-extrabold block text-[#1E1B4B]">TCS iON Examination Key</span>
                     <span>100% digital secure high-grade assessments</span>
@@ -774,10 +893,10 @@ export default function App() {
 
               <div className="pt-2">
                 <button
-                  onClick={() => scrollToComponent(section10FormRef)}
-                  className="bg-[#5B21B6] text-white hover:bg-[#4C1D95] font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg shadow-sm cursor-pointer"
+                  onClick={handleDownloadBrochure}
+                  className="bg-[#5B21B6] text-white hover:bg-[#4C1D95] font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-lg shadow-md transition-all hover:scale-105 cursor-pointer flex items-center gap-1.5"
                 >
-                  Download Corporate brochure PDF
+                  <span>Download Corporate Brochure PDF 📄</span>
                 </button>
               </div>
             </div>
@@ -1019,7 +1138,7 @@ export default function App() {
 
                   {/* Visual callout overlay for active item */}
                   {isSelected && (
-                    <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-[#EA580C]">
+                    <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-[#B91C1C]">
                       <span>Orientation guide available</span>
                       <span className="font-bold">Download Ready →</span>
                     </div>
@@ -1056,7 +1175,7 @@ export default function App() {
               >
                 {/* Floating model identifier tag */}
                 {model.id === 'intense' && (
-                  <div className="absolute top-0 right-6 -translate-y-1/2 bg-[#EA580C] text-white text-[10px] font-mono font-bold tracking-widest uppercase py-1 px-3.5 rounded-full">
+                  <div className="absolute top-0 right-6 -translate-y-1/2 bg-[#B91C1C] text-white text-[10px] font-mono font-bold tracking-widest uppercase py-1 px-3.5 rounded-full">
                     Recommended Peak Track
                   </div>
                 )}
@@ -1066,7 +1185,7 @@ export default function App() {
                   <h3 className="text-xl font-heading font-extrabold text-[#1E1B4B] group-hover:text-[#5B21B6] transition-colors mb-2">
                     {model.name}
                   </h3>
-                  <p className="text-xs text-[#EA580C] font-mono font-semibold tracking-wide mb-3">{model.tagline}</p>
+                  <p className="text-xs text-[#B91C1C] font-mono font-semibold tracking-wide mb-3">{model.tagline}</p>
                   
                   <div className="border-t border-slate-200/60 my-4"></div>
                   
@@ -1154,7 +1273,7 @@ export default function App() {
 
               {/* Estimate results block */}
               <div className="bg-white rounded-2xl p-5 border border-slate-200 text-left space-y-3.5">
-                <span className="text-[9px] font-mono tracking-widest text-[#EA580C] block uppercase font-bold">ESTIMATED LOGISTICAL DELIVERABLES</span>
+                <span className="text-[9px] font-mono tracking-widest text-[#B91C1C] block uppercase font-bold">ESTIMATED LOGISTICAL DELIVERABLES</span>
                 
                 <div className="space-y-2">
                   <div className="flex justify-between text-xs pb-1 border-b border-slate-100">
@@ -1167,9 +1286,9 @@ export default function App() {
                   </div>
                   <div className="flex justify-between text-xs pb-1 border-b border-slate-100">
                     <span className="text-slate-500">Secure Online Assessments:</span>
-                    <span className="font-extrabold text-[#1E1B4B]">{selectedModelType === 'intense' ? 'All Proctored TCS iON Levels' : 'Standard School Levels'}</span>
+                    <span className="font-extrabold text-[#1E1B4B]">{(selectedModelType as string) === 'intense' ? 'All Proctored TCS iON Levels' : 'Standard School Levels'}</span>
                   </div>
-                  <div className="flex justify-between text-xs pb-1">
+                  <div className="flex justify-between text-xs pb-1 cursor-pointer">
                     <span className="text-slate-500">Certificates, Medals, & Trophies:</span>
                     <span className="font-extrabold text-[#10B981]">100% Fully Furnished</span>
                   </div>
@@ -1178,7 +1297,7 @@ export default function App() {
                 <button
                   type="button"
                   onClick={() => handleSelectModelFromEstimator(selectedModelType)}
-                  className="w-full inline-flex items-center justify-center gap-1.5 bg-[#EA580C] hover:bg-[#D97706] text-white font-bold text-xs uppercase tracking-wider py-2.5 px-4 rounded-xl shadow-xs cursor-pointer"
+                  className="w-full inline-flex items-center justify-center gap-1.5 bg-[#B91C1C] hover:bg-[#991B1B] text-white font-bold text-xs uppercase tracking-wider py-2.5 px-4 rounded-xl shadow-xs cursor-pointer"
                 >
                   <span>Pre-fill This Layout in Request form →</span>
                 </button>
@@ -1338,7 +1457,7 @@ export default function App() {
             </div>
             <div className="bg-white p-5 rounded-2xl border border-slate-200">
               <span className="text-xs text-slate-400 font-mono uppercase block font-bold">BOARD ACCREDITATION</span>
-              <span className="text-2xl font-black text-[#EA580C] block mt-1">100% Endorsed</span>
+              <span className="text-2xl font-black text-[#B91C1C] block mt-1">100% Endorsed</span>
               <p className="text-[11px] text-slate-500 mt-1">Acclaimed globally as an organic curriculula tool.</p>
             </div>
           </div>
@@ -1636,29 +1755,12 @@ export default function App() {
             {/* Column 1: Edugo logo description */}
             <div className="col-span-2 space-y-4">
               <div className="flex items-center gap-2 select-none">
-                <div className="relative w-8 h-8 flex-shrink-0">
-                  <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-sm">
-                    {/* Antennas */}
-                    <path d="M 42 38 Q 38 28 32 30" fill="none" stroke="#EF4444" strokeWidth="2.5" />
-                    <circle cx="32" cy="30" r="3" fill="#B91C1C" />
-                    <path d="M 58 38 Q 62 28 68 30" fill="none" stroke="#EF4444" strokeWidth="2.5" />
-                    <circle cx="68" cy="30" r="3" fill="#B91C1C" />
-                    {/* Wings */}
-                    <ellipse cx="28" cy="48" rx="14" ry="10" transform="rotate(-30 28 48)" fill="#F8FAFC" stroke="#94A3B8" strokeWidth="2" />
-                    <ellipse cx="72" cy="48" rx="14" ry="10" transform="rotate(30 72 48)" fill="#F8FAFC" stroke="#94A3B8" strokeWidth="2" />
-                    {/* Bee Body */}
-                    <circle cx="50" cy="62" r="23" fill="#B91C1C" stroke="#7F1D1D" strokeWidth="2" />
-                    {/* Smile */}
-                    <path d="M 46 66 Q 50 70 54 66" fill="none" stroke="#0F172A" strokeWidth="2" />
-                    {/* Graduation Cap */}
-                    <polygon points="50,23 74,31 50,39 26,31" fill="#1E293B" />
-                    <path d="M 37 32.5 L 37 38.5 Q 50 45.5 63 38.5 L 63 32.5 Z" fill="#334155" />
-                  </svg>
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="font-serif font-extrabold text-[#B91C1C] text-[13px] leading-none uppercase">SpellBee</span>
-                  <span className="font-serif font-bold text-slate-700 text-[8.5px] uppercase tracking-wider leading-none mt-0.5">International</span>
-                </div>
+                <img 
+                  src="/src/assets/images/regenerated_image_1782118489180.png" 
+                  alt="SpellBee International Logo" 
+                  className="h-10 w-auto object-contain"
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <p className="text-slate-500 max-w-xs leading-relaxed font-light">
                 Premium student language benchmarking program empowering school coordinators, active parent groups, and regional educators through customized syllabi.
@@ -1672,7 +1774,7 @@ export default function App() {
             <div className="space-y-3">
               <h5 className="font-heading font-extrabold text-[#1E1B4B] uppercase tracking-wider text-[11px]">Program Tiers</h5>
               <ul className="space-y-2">
-                <li><button onClick={() => scrollToComponent(section5FrameworkRef)} className="hover:text-[#5B21B6] transition-colors cursor-pointer">Level 1 - Foundation</button></li>
+                <li><button onClick={() => scrollToComponent(section5FrameworkRef)} className="hover:text-[#5B21B6] transition-colors cursor-pointer">Level 1 - Inter School</button></li>
                 <li><button onClick={() => scrollToComponent(section5FrameworkRef)} className="hover:text-[#5B21B6] transition-colors cursor-pointer">Level 2 - State Progression</button></li>
                 <li><button onClick={() => scrollToComponent(section5FrameworkRef)} className="hover:text-[#5B21B6] transition-colors cursor-pointer">Level 3 - National Prep</button></li>
                 <li><button onClick={() => scrollToComponent(section5FrameworkRef)} className="hover:text-[#5B21B6] transition-colors cursor-pointer">Level 4 - Global Security</button></li>

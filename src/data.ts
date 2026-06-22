@@ -68,7 +68,7 @@ export const frameworkLevels: FrameworkLevel[] = [
   {
     id: 'level-1',
     levelNum: 1,
-    title: 'Foundation',
+    title: 'Inter School',
     focus: 'Spelling rules, basic phonetics, early vocabulary expansion, reading discipline, and foundational academic confidence.'
   },
   {
