@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Outfit", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom palette of Navy, Academic Green, and Soft Gold */
+  --color-navy-50: #f4f7fa;
+  --color-navy-100: #e2eaf1;
+  --color-navy-200: #cbd9e5;
+  --color-navy-300: #a7bed3;
+  --color-navy-400: #7a9cb9;
+  --color-navy-500: #587ea0;
+  --color-navy-600: #436485;
+  --color-navy-700: #364f6b;
+  --color-navy-800: #1a2d42;
+  --color-navy-900: #0f1c2a;
+  --color-navy-950: #0a111a;
+
+  --color-academic-50: #f0fdf4;
+  --color-academic-100: #dcfce7;
+  --color-academic-200: #bbf7d0;
+  --color-academic-500: #22c55e;
+  --color-academic-600: #16a34a;
+  --color-academic-700: #15803d;
+  --color-academic-800: #166534;
+  --color-academic-900: #14532d;
+
+  --color-gold-50: #fefce8;
+  --color-gold-100: #fef9c3;
+  --color-gold-400: #facc15;
+  --color-gold-500: #eab308;
+  --color-gold-600: #ca8a04;
+  --color-gold-700: #a16207;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fafbfc;
+  color: #1a2d42;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}

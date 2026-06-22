@@ -1,0 +1,6 @@
+{
+  "name": "SpellBee International - School Partnership Programme",
+  "description": "A premium school partnership platform designed for K-12 school leaders, helping them implement structured English language frameworks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
